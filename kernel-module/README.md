@@ -117,7 +117,7 @@ clean:
 22. `bitbake package-index`
 23. re-build the image ( in this example `core-image-sato`) :` bitbake core-image-sato`
 24. run the image in QEMU: `runqemu qemux86-64` : (in this example I'm using `qemux86-64` , add `nographic` to the command if you are remotely logged into a machine )
-25. `modeprobe hello`
+25. `modprobe hello`
 26. :zap:
 
 
