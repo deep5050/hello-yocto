@@ -3,7 +3,7 @@
 ### Steps
 1. `cd ~/poky` : Replace with your poky path
 2. create a new layer. let say `meta-hello-yocto`: `bitbake-layers create-layer ./meta-hello-yocto`
-3. initialize the build environment variables : `sourc oe-init-build-env`
+3. initialize the build environment variables : `source oe-init-build-env`
 4. `cd build/` if not already there.
 5. add the newly created layer to the build-system: `bitbake-layers add-layer "../meta-hello-yocto"`. This should automatically update the `bblayers.conf` file under `build/conf`
 6. `cd ~/poky/meta-hello-yocto`
