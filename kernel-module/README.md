@@ -5,12 +5,12 @@
 2. create a new layer. let say `meta-hello-yocto`: `bitbake-layers create-layer ./meta-hello-yocto`
 3. initialize the build environment variables : `sourc oe-init-build-env`
 4. `cd build/` if not already there.
-5. add the newly create layer to the build-system: `bitbake-layers add-layer "../meta-hello-yocto"`. This should automatically update the `bblayers.conf` file under `build/conf`
+5. add the newly created layer to the build-system: `bitbake-layers add-layer "../meta-hello-yocto"`. This should automatically update the `bblayers.conf` file under `build/conf`
 6. `cd ~/poky/meta-hello-yocto`
 7. remove the receipes-exaple directory :`rm -rf recipes-example/`
 8. create a dir . let say `recepies-kernel`: `mkdir recipes-kernel`
 9. `cd recipes-kernel/`
-10. make a dir. let say hello-mod: `mkdir hello-mod`
+10. make a directory. let say hello-mod: `mkdir hello-mod`
 11. `cd hello-mod`
 12. create a file name, say `kernel-module-hello_0.1.bb` with the following content:
 ```
